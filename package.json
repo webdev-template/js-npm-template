@@ -1,0 +1,33 @@
+{
+  "name": "js-npm-template",
+  "version": "1.0.0",
+  "description": "编写JS库,并发布到npm.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/npm-template/js-npm-template.git"
+  },
+  "keywords": [
+    "js-npm-template",
+    "npm-template",
+    "js"
+  ],
+  "author": "Rabbitzzc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/npm-template/js-npm-template/issues"
+  },
+  "homepage": "https://github.com/npm-template/js-npm-template#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint-config-alloy": "^3.8.0",
+    "husky": "^4.2.5"
+  }
+}
