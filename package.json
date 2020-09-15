@@ -1,6 +1,6 @@
 {
   "name": "js-npm-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "编写JS库,并发布到npm.",
   "main": "dist/index.min.js",
   "module": "dist/index.min.js",
