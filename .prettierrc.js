@@ -4,8 +4,8 @@ module.exports = {
     useTabs: false,
     singleQuote: true,
     semi: true,
-    TrailingCooma: "none",
+    trailingComma: "none",
     bracketSpacing: true,
     arrowParens: 'always',
-    mlWhitespaceSensitivity: 'ignore'
+    htmlWhitespaceSensitivity: 'ignore'
 }
