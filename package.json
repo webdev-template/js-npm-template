@@ -2,11 +2,13 @@
   "name": "js-npm-template",
   "version": "1.0.0",
   "description": "编写JS库,并发布到npm.",
-  "main": "lin/index.min.js",
+  "main": "dist/index.min.js",
+  "module": "dist/index.min.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
+    "build": "rollup -c",
     "prettier": "prettier  --write src/*",
     "test": "echo \"Error: no test specified\"",
     "lint": "eslint --fix",
@@ -52,6 +54,7 @@
     "prettier": "2.1.1",
     "rollup": "^2.26.11",
     "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-clear": "2.0.7",
     "rollup-plugin-terser": "^7.0.2"
   },
   "dependencies": {}
