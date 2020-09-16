@@ -10,7 +10,6 @@ import clear from "rollup-plugin-clear"
 const path = require('path')
 
 const resolve = function (filePath) {
-    console.log(path.join(__dirname,  filePath))
     return path.join(__dirname,  filePath)
 }
 export default {
