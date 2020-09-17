@@ -103,4 +103,10 @@ See [CHANGELOG]()
 - [x] `npmrc`
 - [x] `CHANGELOG`
 - [x] `git author` (检测用户提交账号) 
+
+
+## 备注
+`@babel/runtime-corejs3` 导入会导致包体积变大，如果没有必要，直接删除即可，并更改 babel 配置
 ---
+
+

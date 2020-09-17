@@ -1,3 +1,3 @@
-const gggggg  = 1
+const gggggg = 1
 
 console.log(gggggg)
