@@ -6,11 +6,11 @@ import {
 } from "rollup-plugin-terser"
 
 // 输出文件夹清除
-import clear from "rollup-plugin-clear"
+import del from 'rollup-plugin-delete'
 const path = require('path')
 
 const resolve = function (filePath) {
-    return path.join(__dirname,  filePath)
+    return path.join(__dirname, filePath)
 }
 export default {
     input: resolve('/src/index.js'), // 入口文件
@@ -18,14 +18,15 @@ export default {
         file: resolve('dist/index.min.js'),
         format: 'umd',
         name: 'npm-lib',
-        plugins: [
-            clear({
-                targets: ["dist"]
-            }),
-            babel({
-                exclude: 'node_modules/**'
-            }), terser()
-        ]
     }],
+    plugins: [
+        del({
+            targets: ["dist"]
+        }),
+        babel({
+            exclude: 'node_modules/**',
+            runtimeHelpers: true
+        }), terser()
+    ],
     external: []
 }
